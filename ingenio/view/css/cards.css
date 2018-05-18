@@ -1,0 +1,63 @@
+.container-section-card{
+  background: url(../img/bg-misvi.jpg);
+  -webkit-background-size:2024px auto;
+   -moz-background-size:2024px auto;
+   -o-background-size:2024px auto;
+   background-size:2024px auto;
+   background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card-container {
+  font-size: 10pt;
+  font-weight: bold;
+  width: 400px;
+  height: 350px;
+  margin: 80px auto;
+  border-radius: 10px;
+  perspective: 1400px;
+}
+
+.card-misvi {
+  position: relative;
+  height: 100%;
+  border-radius: 10px;
+  width: 100%;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 10px;
+
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.front {
+  color: #29C300;
+  background: #fff;
+  font-size: 50pt;
+}
+.front h1{
+  font-family: 'Montserrat', Sans-serif;
+  font-weight: bold;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+  color: #29C300;
+  background: #fff;
+  padding: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12pt;
+}
