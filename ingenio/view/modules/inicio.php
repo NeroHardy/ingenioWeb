@@ -12,28 +12,28 @@
 			<section class="row d-flex flex-column">
 				<div class="content-slider content--fixed--slider">
 					<nav class="pagination">
-						<span class="pagination__item"><img src="img/slider/img1.jpg" class="min-img-slide" alt=""></span>
-						<span class="pagination__item"><img src="img/slider/img2.jpg" class="min-img-slide" alt=""></span>
-						<span class="pagination__item"><img src="img/slider/img3.jpg" class="min-img-slide" alt=""></span>
-						<span class="pagination__item"><img src="img/slider/img4.jpg" class="min-img-slide" alt=""></span>
-						<span class="pagination__item"><img src="img/slider/img5.jpg" class="min-img-slide" alt=""></span>
+						<span class="pagination__item"><img src="view/img/slider/img1.jpg" class="min-img-slide" alt=""></span>
+						<span class="pagination__item"><img src="view/img/slider/img2.jpg" class="min-img-slide" alt=""></span>
+						<span class="pagination__item"><img src="view/img/slider/img3.jpg" class="min-img-slide" alt=""></span>
+						<span class="pagination__item"><img src="view/img/slider/img4.jpg" class="min-img-slide" alt=""></span>
+						<span class="pagination__item"><img src="view/img/slider/img5.jpg" class="min-img-slide" alt=""></span>
 					</nav>
 				</div>
 				<div class="slides">
 						<div class="slide slide--current">
-							<div class="slide__img" style="background-image: url(img/slider/img1.jpg) ;"></div>
+							<div class="slide__img" style="background-image: url(view/img/slider/img1.jpg) ;"></div>
 						</div>
 						<div class="slide">
-							<div class="slide__img" style="background-image: url(img/slider/img2.jpg) ;"></div>
+							<div class="slide__img" style="background-image: url(view/img/slider/img2.jpg) ;"></div>
 						</div>
 						<div class="slide">
-							<div class="slide__img" style="background-image: url(img/slider/img3.jpg) ;"></div>
+							<div class="slide__img" style="background-image: url(view/img/slider/img3.jpg) ;"></div>
 						</div>
 						<div class="slide">
-							<div class="slide__img" style="background-image: url(img/slider/img4.jpg) ;"></div>
+							<div class="slide__img" style="background-image: url(view/img/slider/img4.jpg) ;"></div>
 						</div>
 						<div class="slide">
-							<div class="slide__img" style="background-image: url(img/slider/img5.jpg) ;"></div>
+							<div class="slide__img" style="background-image: url(view/img/slider/img5.jpg) ;"></div>
 						</div>
 				</div>
 			</section>

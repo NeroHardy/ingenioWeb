@@ -17,9 +17,8 @@
 
 		    <div class="navbar-nav">
 		      <a class="nav-item nav-link active" href="index.php?action=inicio">Bienvenidos <span class="sr-only">(current)</span></a>
-		      <a class="nav-item nav-link" href="index.php?action=servicios">Intranet</a>
+		      <a class="nav-item nav-link" href="index.php?action=ingresar">Intranet</a>
 		      <a class="nav-item nav-link" href="index.php?action=contacto">contacto</a>
-		  	  <a class="nav-item nav-link" href="index.php?action=ingresar">Inicia Sesión</a>
 		    </div>
 		  </div>
 </nav>

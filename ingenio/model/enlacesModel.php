@@ -5,9 +5,10 @@ class EnlacesPaginas{
 	static public function enlacesPaginasModel($enlacesModel){
 
 		if($enlacesModel == "inicio" || 
-		   $enlacesModel == "servicios" || 
+		   $enlacesModel == "intranet" || 
 		   $enlacesModel == "contacto" ||
 		   $enlacesModel == "ingresar" ||
+		   $enlacesModel == "home-buro"||
 		   $enlacesModel == "editar" ||
 		   $enlacesModel == "eliminar"
 			)
@@ -21,6 +22,10 @@ class EnlacesPaginas{
 
 			$module = "view/modules/inicio.php";
 
+		}
+		elseif ($enlacesModel =="ok") {
+
+			$module = "view/modules/intranet.php";
 		}
 		elseif ($enlacesModel == "fallo") {
 			

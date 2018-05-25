@@ -1,23 +1,20 @@
 <?php  
-require_once"conexion.php";
+require_once"Conexion.php";
 
-class UsuarioModel extends Conexion
+class Datos extends Conexion
 {
-	
-	public function ingresarUsuarioModel()
-	{
-		$stmt = Conexion::conectar()->prepare("SELECT alias, contrasenia FROM usuario WHERE alias =:alias AND contrasenia =:contrasenia");
-		$stmt->bindParam(":alias",$this->alias,PDO::PARAM_STR);
-		$stmt->bindParam(":contrasenia",$this->contrasenia,PDO::PARAM_STR);
-		$stmt->execute(); 
+#INGRESO USUARIO
+	#-------------------------------------
+	static public function ingresoUsuarioModel($datosModel, $tabla){
 
+		$stmt = Conexion::conectar()->prepare("SELECT id,usuario, contrasenia FROM $tabla WHERE usuario = :usuario");	
+		$stmt->bindParam(":usuario", $datosModel["usuario"], PDO::PARAM_STR);
+		$stmt->execute();
+
+		#fetch(): Obtiene una fila de un conjunto de resultados asociado al objeto PDOStatement. 
 		return $stmt->fetch();
 
 		$stmt->close();
 
 	}
 }
-
-
-
-?>

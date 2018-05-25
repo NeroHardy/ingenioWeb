@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -19,34 +19,49 @@
 	<!--login-->
 	<link rel="stylesheet" type="text/css" href="view/css/login.css">
 	<!--login-->
-		
 	
-
 	<script src="view/js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8" async defer></script>	
 	<script src="view/js/jquery-migrate-1.4.1.min.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="view/js/bootstrap.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="view/js/bootstrap.bundle.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="view/js/fontawesome-all.min.js" type="text/javascript" charset="utf-8" async defer></script>
-	<script src="view/js/imagesloaded.pkgd.min.js"></script>
-	<script src="view/js/anime.min.js"></script>
-	<script src="view/js/uncover.js"></script>
-	<script src="view/js/slider.js"></script>
-	<script src="view/js/cards.js"></script>
-	<script type="text/javascript" src="view/js/map.js"></script>
+	<script src="view/js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+	<script src="view/js/anime.min.js" type="text/javascript"></script>
+	<script src="view/js/uncover.js" type="text/javascript"></script>
+	<script src="view/js/slider.js" type="text/javascript"></script>
+	<script src="view/js/cards.js" type="text/javascript"></script>
+	<script src="view/js/map.js" type="text/javascript" ></script>
 	<script async defer
-	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmmvWqvH76Ey2JGZoxEHIJl4pQDlsSoJA&callback=initMap">
+	    src="https://maps.googleapis.com/maps/api/js?key=
+AIzaSyDIQxHF2AmHknwVAxgwHBL6nFAAuY5jqFg
+=initMap">
 	  </script>
 	  
 </head>
 <body>
 
-<?php include "modules/navegacion.php";?>
+
+
+<?php
+
+if(isset($_SESSION["validar"])){
+
+    include "modules/navegacion-home.php";
+    
+}
+else{
+
+    include "modules/navegacion.php";
+     
+}                       
+?>
+
 
 <section>
 
 <?php
 
-$mvc = new MvcController();
+$mvc = new EnlacesController();
 $mvc -> enlacesPaginasController();
 
 ?>

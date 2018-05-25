@@ -1,13 +1,13 @@
 <?php
 
-class MvcController{
+class EnlacesController{
 
 	#LLAMADA A LA PLANTILLA
 	#----------------------------------------------
 
-	public function pagina(){
+	public function pagina()
+	{
 
-		#include() Se utiliza para invocar el archivo que contiene código html.
 		include "view/template.php";
 	}
 
