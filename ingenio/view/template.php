@@ -32,9 +32,7 @@
 	<script src="view/js/cards.js" type="text/javascript"></script>
 	<script src="view/js/map.js" type="text/javascript" ></script>
 	<script async defer
-	    src="https://maps.googleapis.com/maps/api/js?key=
-AIzaSyDIQxHF2AmHknwVAxgwHBL6nFAAuY5jqFg
-=initMap">
+	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIQxHF2AmHknwVAxgwHBL6nFAAuY5jqFg=initMap">
 	  </script>
 	  
 </head>
@@ -43,7 +41,6 @@ AIzaSyDIQxHF2AmHknwVAxgwHBL6nFAAuY5jqFg
 
 
 <?php
-
 if(isset($_SESSION["validar"])){
 
     include "modules/navegacion-home.php";

@@ -21,14 +21,20 @@
 $ingreso = new Ingreso();
 $ingreso -> ingresoUsuarioController();
 
+
 if(isset($_GET["action"])){
 
 	if($_GET["action"] == "fallo"){
 
 		echo "Fallo al ingresar";
 	
+	}
+/**
+	if($_GET["action"] == "fallo3intentos"){
+
+		echo "Ha fallado 3 veces para ingresar, favor llenar el captcha";
 	
 	}
-
+**/
 }
 

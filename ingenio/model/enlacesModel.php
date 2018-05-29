@@ -2,7 +2,7 @@
 
 class EnlacesPaginas{
 
-	static public function enlacesPaginasModel($enlacesModel){
+	 public static function enlacesPaginasModel($enlacesModel){
 
 		if($enlacesModel == "inicio" || 
 		   $enlacesModel == "intranet" || 
@@ -28,6 +28,11 @@ class EnlacesPaginas{
 			$module = "view/modules/intranet.php";
 		}
 		elseif ($enlacesModel == "fallo") {
+			
+			$module = "view/modules/ingresar.php";
+		}
+
+		elseif ($enlacesModel == "fallo3intentos") {
 			
 			$module = "view/modules/ingresar.php";
 		}
