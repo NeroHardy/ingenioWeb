@@ -41,13 +41,18 @@
 
 
 <?php
-if(isset($_SESSION["validar"])){
 
-    include "modules/navegacion-home.php";
-    
-}
-else{
+session_start();
 
+  if(isset($_SESSION['validar'])){
+  
+  
+
+  if($_SESSION['validar'] == 1){
+	 include "modules/navegacion-home.php";   
+  }}
+
+  else{
     include "modules/navegacion.php";
      
 }                       
