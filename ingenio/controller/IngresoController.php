@@ -28,7 +28,7 @@ class Ingreso{
 
 				session_start();
 
-				$_SESSION["validar"] = true;
+				$_SESSION["validar"] = 1;
 
 				header("location:index.php?action=ok");
 
