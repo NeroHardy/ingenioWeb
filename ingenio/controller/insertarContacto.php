@@ -18,7 +18,7 @@ echo "Connected successfully";
  
 $sql = "INSERT INTO contacto (nombre,apellidos,correo,celular,fecha,motivo) VALUES ('".$_POST['nombre']."','".$_POST['apellidos']."','".$_POST['correo']."','".$_POST['celular']."','".$_POST['fecha']."','".$_POST['motivo']."')";
 if (mysqli_query($conn, $sql)) {
-	header("../../location:index.php?action=inicio");
+	header("location:../index.php");
       echo "New record created successfully";
 
 } else {
