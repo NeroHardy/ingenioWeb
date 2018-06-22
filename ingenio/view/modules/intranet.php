@@ -1,3 +1,23 @@
+
+<?php
+
+
+  if(isset($_SESSION['validar'])){
+  
+
+  if($_SESSION['validar'] == 1){
+
+	 
+  }
+}
+  else{
+        include "inicio.php";
+     
+}  
+
+                    
+?>
+
 <section class="jumbotron jumbotron-fluid hero-parrallax-page">
 	<article class="container text-center">
 		<h1 class="text-white display-4 title-font">AZUCARERA SAN JOSÉ INTRANET</h1>

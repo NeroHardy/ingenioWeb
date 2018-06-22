@@ -14,7 +14,7 @@
 <section class="container-fluid">
 	<article class="row">
 		<article class="col-md-12">
-			<form action="contacto_submit" method="get" accept-charset="utf-8">
+			<form  method="post" accept-charset="utf-8" action="controller/insertarContacto.php">
 				<div class="form-row p-3">
 					<div class="col-lg-12">
 						<select class="form-control form-control-lg">
@@ -24,10 +24,10 @@
 				</div>
 				<div class="form-row p-3">
 					<div class="col-md-3">
-						<input class="form-control form-control-lg" type="text" placeholder="NOMBRE:">
+						<input class="form-control form-control-lg" type="text" placeholder="NOMBRE:" name="nombre">
 					</div>
 					<div class="col-md-3">
-						<input class="form-control form-control-lg" type="text" placeholder="APELLIDOS">
+						<input class="form-control form-control-lg" type="text" placeholder="APELLIDOS" name="apellidos">
 					</div>
 					<div class="col-md-3">
 						<select class="form-control form-control-lg">
@@ -40,18 +40,18 @@
 				</div>
 				<div class="form-row p-3">
 					<div class="col-md-6">
-						<input class="form-control form-control-lg" type="text" placeholder="CORREO ELÉCTRONICO:">
+						<input class="form-control form-control-lg" type="text" placeholder="CORREO ELÉCTRONICO:" name="correo">
 					</div>
 					<div class="col-md-6">
-						<input class="form-control form-control-lg" type="tel" placeholder="CELULAR:">
+						<input class="form-control form-control-lg" type="tel" placeholder="CELULAR:" name="celular">
 					</div>
 				</div>
 				<div class="form-row p-3">
 					<div class="col-md-6">
-						<input class="form-control form-control-lg" type="date" placeholder="FECHA:">
+						<input class="form-control form-control-lg" type="date" placeholder="FECHA:" name="fecha">
 					</div>
 					<div class="col-md-6">
-						<input class="form-control form-control-lg" type="text" placeholder="MOTIVO DE VISITA:">
+						<input class="form-control form-control-lg" type="text" placeholder="MOTIVO DE VISITA:" name="motivo">
 					</div>
 				</div>
 				<div class="form-row p-3">

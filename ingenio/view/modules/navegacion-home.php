@@ -8,11 +8,15 @@
 		  <div class="collapse navbar-collapse" id="navmain">
 		    <ul class="navbar-nav mr-auto">
 			  <li class="nav-item">
-		        <a class="nav-link disabled" href="#">Usuario:</a>
+		        <a class="nav-link disabled" href="#">Usuario: </a>
 		      </li>
 		    </ul>
 		    <form class="form-inline my-2 my-lg-0">
-		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerrar Sesión</button>
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerrar Sesión<?php
+
+session_destroy();
+
+?></button>
 		    </form>
 		  </div>
 		</nav>

@@ -1,4 +1,18 @@
 
+<?php
+
+
+  if(isset($_SESSION['validar'])){
+  
+
+  if($_SESSION['validar'] == 1){
+
+	  include "intranet.php";
+  }
+}
+  else{
+       
+     ?>
 <body class="bglogin">
 	<main>
 		<section class="container-fluid">
@@ -37,4 +51,9 @@ if(isset($_GET["action"])){
 	}
 **/
 }
+
+}  
+
+                    
+?>
 
